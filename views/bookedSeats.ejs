@@ -1,0 +1,29 @@
+<%- include("./partials/header"); -%>
+
+   <body class="home-body">
+      <%- include("./partials/navbarSeats"); -%>
+         <h1 class="p-signup existing-audi-head">Booked Seats</h1>
+         <div class="edit-existing-audi-outer">
+            <% audis.forEach(function(audi) { %>
+               <div class="edit-existing-audi-inner">
+                  <div class="row existing-audi-row">
+                     <div>
+                        <p>
+                           Name: <%= audi.name %>
+                        </p>
+                        <p>
+                           Number of seats booked: <%= audi.noOfSeats %>
+                        </p>
+                        <p>
+                           Amount paid: Rs <%= audi.price %>
+                        </p>
+                     </div>
+                  </div>
+
+               </div>
+               <br><br><br>
+               <% }); %>
+         </div>
+
+         <%- include("./partials/footer"); -%>
+            <%- include("./partials/footerBootstrap"); -%>

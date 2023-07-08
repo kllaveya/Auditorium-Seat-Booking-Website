@@ -1,0 +1,40 @@
+<%- include("./partials/header"); -%>
+
+   <body class="feedback-body">
+
+      <nav class="navbar navbar-expand bg-body-tertiary">
+         <div class="container">
+            <p class="navbar-brand">THE SOLUTION!</p>
+            <ul class="nav navbar-nav navbar-right">
+               <li class="nav-item" id="home"><a class="nav-link" href="./"><button class="btn">HOME</button></a></li>
+            </ul>
+         </div>
+      </nav>
+      <div class="feedback-form">
+         <form class="form-floating feedback-form" action="/feedbackForm" method="post">
+            <div class="inputarea">
+               <h1>We regret seeing you leave us 😭, please help us improve 🥺:</h1><br>
+               <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="floatingName" placeholder="Name of Company"
+                     name="nameOfCompany">
+                  <label for="floatingName">Name</label>
+               </div>
+               <div class="form-floating mb-3">
+                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"
+                     name="emailAddress">
+                  <label for="floatingInput">Email address</label>
+               </div>
+               <textarea class="form-control" id="floatingConcerns" placeholder="Concerns" cols="30" rows="5"
+                  name="feedback"></textarea>
+               <br>
+               <div class="d-grid gap-2">
+                  <button class="btn" type="submit">Submit</button>
+               </div><br>
+            </div>
+         </form>
+      </div>
+
+
+      <%- include("./partials/footer") -%>
+
+         <%- include("./partials/footerBootstrap") -%>

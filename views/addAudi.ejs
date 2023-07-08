@@ -1,0 +1,95 @@
+<%- include("./partials/header"); -%>
+
+   <body class="signup-body">
+      <%- include("./partials/navbarAudi"); -%>
+
+         <div class="row pad-grid">
+            <div class="col-lg-6 text-signup">
+               <h1 class="p-signup">Auditoriums are where people come to express, to make memories, to forget work and
+                  just be themselves.<br><br> While you provide them the experience they deserve, our job is to bring
+                  them closer to you.</h1>
+            </div>
+            <div class="col-lg-6">
+               <div class="signup">
+                  <form class="form-floating form-signup" method="post" action="/addAudi">
+                     <div class="inputarea">
+                        <h1>Name of Company</h1><br>
+                        <div class="form-floating mb-3">
+                           <input type="text" class="form-control" id="floatingName" placeholder="Name of Audi"
+                              name="name">
+                           <label for="floatingName">Name of Audi</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                           <textarea class="form-control" id="floatingAddress" placeholder="Address"
+                              name="address"></textarea>
+                           <label for="floatingAddress">Address</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                           <input type="text" class="form-control" id="floatingMobNum" placeholder="XXXXX"
+                              name="noOfSections">
+                           <label for="floatingMobNum">No of sections of seats?</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                           <input type="text" class="form-control" id="floatingMobNum" placeholder="XXXXX"
+                              name="noOfRows">
+                           <label for="floatingMobNum">No of rows per section?</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                           <input type="text" class="form-control" id="floatingMobNum" placeholder="XXXXX"
+                              name="noOfSeats">
+                           <label for="floatingMobNum">No of seats in one row?</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                           <input type="text" class="form-control" id="floatingMobNum" placeholder="XXXXX" name="price">
+                           <label for="floatingMobNum">Ticket Price</label>
+                        </div>
+                        <label>Ticket counter available?</label><br>
+                        <div class="input-group">
+                           <div class="input-group-text">
+                              <input class="form-check-input mt-0" name="ticket" type="radio" value="Yes"
+                                 aria-label="Ticket counter available?">
+                           </div>
+                           <label class="form-control" aria-label="Choose your role">Yes</label>
+                           <div class="input-group-text">
+                              <input class="form-check-input mt-0" name="ticket" type="radio" value="No"
+                                 aria-label="Ticket counter available?">
+                           </div>
+                           <label class="form-control" aria-label="Choose your role">No</label>
+                        </div><br>
+                        <label>Luggage facility available?</label><br>
+                        <div class="input-group">
+                           <div class="input-group-text">
+                              <input class="form-check-input mt-0" name="luggage" type="radio" value="Yes"
+                                 aria-label="Luggage facility available?">
+                           </div>
+                           <label class="form-control" aria-label="Choose your role">Yes</label>
+                           <div class="input-group-text">
+                              <input class="form-check-input mt-0" name="luggage" type="radio" value="No"
+                                 aria-label="Luggage facility available?">
+                           </div>
+                           <label class="form-control" aria-label="Choose your role">No</label>
+                        </div>
+                        <br>
+                        <label>Food outlets available?</label><br>
+                        <div class="input-group">
+                           <div class="input-group-text">
+                              <input class="form-check-input mt-0" name="food" type="radio" value="Yes"
+                                 aria-label="Food outlets available?">
+                           </div>
+                           <label class="form-control" aria-label="Choose your role">Yes</label>
+                           <div class="input-group-text">
+                              <input class="form-check-input mt-0" name="food" type="radio" value="No"
+                                 aria-label="Food outlets available?">
+                           </div>
+                           <label class="form-control" aria-label="Choose your role">No</label>
+                        </div><br>
+                        <div class="d-grid gap-2">
+                           <button class="btn" type="submit">Add my Audi</button>
+                        </div><br>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+
+         <%- include("./partials/footerBootstrap") -%>

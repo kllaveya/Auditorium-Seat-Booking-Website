@@ -1,0 +1,147 @@
+<%- include("./partials/header"); -%>
+
+   <body class="home-body">
+      <% if(user.role === "Patron"){ %>
+         <%- include("./partials/navbarSeats"); -%>
+      <% } else{ %>
+         <%- include("./partials/navbarAudi"); -%>
+      <% } %>
+         <% if (edit) { %>
+            <form class="form-floating feedback-form" action="/saveProfile" method="post">
+         <% } %>
+         <% if (!edit) { %>
+            <form cl ass="form-floating feedback-form" method="post" action="/profile">
+         <% } %>
+            <p class="profile profile-text">Welcome, <%= user.name %>!</p><br>
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-6">
+                     <p class="profile-labels">Name: </p>
+                  </div>
+                  <div class="col-lg-6">
+                     <input type="text" name="name" placeholder="<%= user.name %>" class="form-control profile-input" 
+                     <% if(!edit) { %>
+                        value="<%= user.name %>"
+                        disabled
+                        <% } %>
+                         /><br>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-lg-6">
+                     <p class="profile-labels">Email Address: </p><br>
+                  </div>
+                  <div class="col-lg-6">
+                     <input type="email" name="username" placeholder="<%= user.username %>" class="form-control profile-input" value="<%= user.username %>"
+                        disabled /><br>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-lg-6">
+                     <p class="profile-labels">Phone Number: </p><br>
+                  </div>
+                  <div class="col-lg-6">
+                     <input type="text" name="phoneNo" placeholder="<%= user.phoneNo %>" class="form-control profile-input" 
+                     <% if(!edit) { %>
+                        value="<%= user.phoneNo %>"
+                        disabled
+                        <% } %>
+                         /><br>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-lg-6">
+                     <p class="profile-labels">Password: </p><br>
+                  </div>
+                  <div class="col-lg-6">
+                     <input type="password" name="password" placeholder="*********" class="form-control profile-input" 
+                     <% if(!edit) { %>
+                        value="<%= user.password %>"
+                        disabled
+                        <% } %>
+                         /><br>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-lg-6">
+                     <p class="profile-labels">Role: </p><br>
+                  </div>
+                  <div class="col-lg-6">
+                     <input type="text" name="role" placeholder="<%= user.role %>" class="form-control profile-input" value="<%= user.role %>" 
+                        disabled /><br>
+                  </div>
+               </div>
+
+               <!-- Only if company -->
+               <% if(user.role === "Business Partner") { %>
+                  <div class="row">
+                     <div class="col-lg-6">
+                        <p class="profile-labels">Name of Company: </p><br>
+                     </div>
+                     <div class="col-lg-6">
+                        <input type="text" name="nameOfCompany" placeholder="ABC" class="form-control profile-input"
+                        <% if(!edit) { %>
+                           value="<%= user.nameOfCompany %>"
+                           disabled
+                           <% } %>
+                            /><br>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-lg-6">
+                        <p class="profile-labels">Address: </p><br>
+                     </div>
+                     <div class="col-lg-6">
+                        <textarea name="address" placeholder="Address" class="form-control profile-input" 
+                        <% if(!edit) { %>
+                           disabled
+                           <% } %>
+                            ><%= user.address %></textarea><br>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-lg-6">
+                        <p class="profile-labels">Contact Number (Company): </p><br>
+                     </div>
+                     <div class="col-lg-6">
+                        <input type="text" name="contactNumber" placeholder="XXXXXX" class="form-control profile-input"
+                        <% if(!edit) { %>
+                           value="<%= user.contactNumber %>"
+                           disabled
+                           <% } %>
+                            /><br>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-lg-6">
+                        <p class="profile-labels">Email Address (Company): </p><br>
+                     </div>
+                     <div class="col-lg-6">
+                        <input type="email" name="emailAddress" placeholder="name@example.com" class="form-control profile-input"
+                           value="<%= user.emailAddress %>" disabled /><br>
+                     </div>
+                  </div>
+               <% } %>
+
+               <!-- Till here -->
+
+
+               <div class="row">
+                  <% if (!edit) { %>
+                     <div class="col-lg-6">
+                        <button type="submit" class="btn profile-button-left" name="edit" value="true">Edit</button>
+                     </div>
+                     <div class="col-lg-6">
+                        <a href="./deleteProfile" class="btn profile-button-right" role="button">Delete</a>
+                     </div>
+                  <% } %>
+                  <% if (edit) { %>
+                     <div>
+                           <button type="submit" class="btn profile-save">Save</button>
+                     </div>
+                  <% } %>
+               </div>
+            </div>
+         </form>
+
+<%- include("./partials/footerBootstrap"); -%>

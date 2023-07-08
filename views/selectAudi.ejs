@@ -1,0 +1,25 @@
+<%- include("./partials/header"); -%>
+
+   <body class="home-body">
+      <%- include("./partials/navbarSeats"); -%>
+
+         <p class="p-signup home-text">Where to, today, <%= name %>?</p>
+         <form class="select-audi" method="post" action="/selectAudi">
+            <select class="form-select" aria-label="Select Audi" name="audiSelected">
+               <option selected>Which Audi do you wish to visit today?</option>
+               <% audis.forEach(function(audi) { %>
+                  <option value="<%= audi._id %>">
+                     <%= audi.name %>
+                  </option>
+                  <% }); %>
+            </select><br>
+            <button class="btn" type="submit">Let's Go!</button>
+         </form>
+
+         <br>
+         <br>
+         <br>
+         <p class="p-signup home-text" style="padding-bottom: 2%">Explore!</p>
+         <%- include("./partials/existingAudis"); -%>
+
+            <%- include("./partials/footerBootstrap"); -%>

@@ -1,0 +1,49 @@
+<%- include("./partials/header"); -%>
+
+   <body class="signup-body">
+
+      <div class="row pad-grid">
+         <div class="col-lg-6 text-signup">
+            <h1 class="p-signup">Having a boring weekend? Lose yourself in the world of ecstasy - where you find music,
+               dance, love, thrill and... yourself. Once again.</h1>
+         </div>
+         <div class="col-lg-6">
+            <div class="login">
+               <form class="form-floating form-signup" action="/login" method="post">
+                  <div class="inputarea">
+                     <h1>The Solution!</h1><br>
+                     <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"
+                           name="username">
+                        <label for="floatingInput">Email address</label>
+                     </div>
+                     <div class="form-floating mb-3">
+                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password"
+                           name="password">
+                        <label for="floatingPassword">Password</label>
+                     </div>
+                     <label>Choose your role: </label><br>
+                     <div class="input-group">
+                        <div class="input-group-text">
+                           <input class="form-check-input mt-0" name="role" type="radio" value="Patron"
+                              aria-label="Choose your role">
+                        </div>
+                        <label class="form-control" aria-label="Choose your role">Patron</label>
+                     </div><br>
+                     <div class="input-group">
+                        <div class="input-group-text">
+                           <input class="form-check-input mt-0" name="role" type="radio" value="Business Partner"
+                              aria-label="Choose your role">
+                        </div>
+                        <label class="form-control" aria-label="Choose your role">Business Partner</label>
+                     </div><br>
+                     <div class="d-grid gap-2">
+                        <button class="btn btn-primary" type="submit">Log In!</button>
+                     </div><br>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+
+      <%- include("./partials/footerBootstrap"); -%>

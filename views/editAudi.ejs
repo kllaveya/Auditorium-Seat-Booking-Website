@@ -1,0 +1,81 @@
+<%- include("./partials/header"); -%>
+
+   <body class="feedback-body">
+
+      <%- include("./partials/navbarAudi"); -%>
+         <div class="feedback-form">
+            <form class="form-floating feedback-form">
+               <div class="inputarea">
+                  <h1>Name of Audi</h1><br>
+                  <div class="form-floating mb-3">
+                     <textarea class="form-control" id="floatingAddress" placeholder="Address"></textarea>
+                     <label for="floatingAddress">Address</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                     <input type="text" class="form-control" id="floatingMobNum" placeholder="XXXXX">
+                     <label for="floatingMobNum">No of sections of seats?</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                     <input type="text" class="form-control" id="floatingMobNum" placeholder="XXXXX">
+                     <label for="floatingMobNum">No of rows per section?</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                     <input type="text" class="form-control" id="floatingMobNum" placeholder="XXXXX">
+                     <label for="floatingMobNum">No of seats in one row?</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                     <input type="text" class="form-control" id="floatingMobNum" placeholder="XXXXX">
+                     <label for="floatingMobNum">Ticket Price</label>
+                  </div>
+                  <label>Ticket counter available?</label><br>
+                  <div class="input-group">
+                     <div class="input-group-text">
+                        <input class="form-check-input mt-0" name="ticket" type="radio" value="Yes"
+                           aria-label="Ticket counter available?">
+                     </div>
+                     <label class="form-control" aria-label="Choose your role">Yes</label>
+                     <div class="input-group-text">
+                        <input class="form-check-input mt-0" name="ticket" type="radio" value="No"
+                           aria-label="Ticket counter available?">
+                     </div>
+                     <label class="form-control" aria-label="Choose your role">No</label>
+                  </div><br>
+                  <label>Luggage facility available?</label><br>
+                  <div class="input-group">
+                     <div class="input-group-text">
+                        <input class="form-check-input mt-0" name="luggage" type="radio" value="Yes"
+                           aria-label="Luggage facility available?">
+                     </div>
+                     <label class="form-control" aria-label="Choose your role">Yes</label>
+                     <div class="input-group-text">
+                        <input class="form-check-input mt-0" name="luggage" type="radio" value="No"
+                           aria-label="Luggage facility available?">
+                     </div>
+                     <label class="form-control" aria-label="Choose your role">No</label>
+                  </div>
+                  <br>
+                  <label>Food outlets available?</label><br>
+                  <div class="input-group">
+                     <div class="input-group-text">
+                        <input class="form-check-input mt-0" name="food" type="radio" value="Yes"
+                           aria-label="Food outlets available?">
+                     </div>
+                     <label class="form-control" aria-label="Choose your role">Yes</label>
+                     <div class="input-group-text">
+                        <input class="form-check-input mt-0" name="food" type="radio" value="No"
+                           aria-label="Food outlets available?">
+                     </div>
+                     <label class="form-control" aria-label="Choose your role">No</label>
+                  </div><br>
+                  <div class="d-grid gap-2">
+                     <div class="flexbox">
+                        <button class="btn save" type="submit">Save</button>
+                        <button class="btn remove" type="submit">Remove</button>
+                     </div>
+                  </div><br>
+               </div>
+            </form>
+         </div>
+
+         <%- include("./partials/footer"); -%>
+            <%- include("./partials/footerBootstrap"); -%>

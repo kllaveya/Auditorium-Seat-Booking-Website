@@ -1,0 +1,102 @@
+<%- include("./partials/header"); -%>
+
+   <body class="home-body">
+      <%- include("./partials/navbarAudi"); -%>
+         <h1 class="p-signup existing-audi-head">Existing Auditoriums</h1>
+         <%- include("./partials/existingAudis"); -%>
+
+            <!-- Pricing Plans -->
+            <section>
+               <div class="existing-audi-pricing-plan">
+                  <h1 class="p-signup existing-audi-head">Pricing Plans</h1>
+                  <div class="row row-cols-1 row-cols-md-3 g-4">
+                     <div class="col">
+                        <div class="card h-100">
+                           <div class="card-body price-card">
+                              <h3 class="card-title">Free Trial</h3>
+                              <h4 class="card-text">Free!</h4>
+                              <h4 class="card-text">1 month</h4>
+                              <button class="btn price-btn" type="submit">
+                                 <h4>Buy Now</h4>
+                              </button>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col">
+                        <div class="card h-100">
+                           <div class="card-body price-card">
+                              <h3 class="card-title">Silver Plan</h3>
+                              <h4 class="card-text">Next 3 months</h4>
+                              <h4 class="card-text">Pay Rs 10,000/-</h4>
+                              <button class="btn price-btn" type="submit">
+                                 <h4>Buy Now</h4>
+                              </button>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col">
+                        <div class="card h-100">
+                           <div class="card-body price-card">
+                              <h3 class="card-title">Most Valued!</h3>
+                              <h4 class="card-text">12 months</h4>
+                              <h4 class="card-text">Pay Rs 25,000/-</h4>
+                              <button class="btn price-btn" type="submit">
+                                 <h4>Buy Now</h4>
+                              </button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+
+            <!-- Testimonials -->
+            <section class="existing-audi-pricing-plan p-signup" id="testimonials">
+               <h1 class="p-signup existing-audi-head">Testimonials</h1>
+               <div id="testimonial-carousel" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                     <div class="carousel-item active container-fluid">
+                        <h2 class="testimonial-text">“We have been using a paper diary for the last 22 years, until now!
+                           The Solution! has helped us maintain better control with our bookings, and understand which
+                           activities are bringing in the most profit. This has helped us improve our facilities for
+                           those
+                           who use it the most.”</h2>
+                        <img class="testimonial-image" src="images/testimonial-img-1.png" alt="Tidre Assembly Hall">
+                        <p class="p-existing-audi-testimonials">Tidre Assembly Hall – Assembly Hall Booking System
+                           Canada
+                        </p>
+                     </div>
+
+                     <div class="carousel-item container-fluid">
+                        <h2 class="testimonial-text">At Hallmaster we’re over the moon to be able to provide such a
+                           robust
+                           product and allow our customers to really put it through its paces.</h2>
+                        <img class="testimonial-image" src="images/testimonial-img-2.png" alt="Parish Hall">
+                        <p class="p-existing-audi-testimonials">St Peters Church – Parish Hall Booking System Australia
+                        </p>
+                     </div>
+
+                     <div class="carousel-item container-fluid">
+                        <h2 class="testimonial-text">How we managed before we had Hallmaster I shall never know!’</h2>
+                        <img class="testimonial-image" src="images/testimonial-img-3.png"
+                           alt="Lesston Community Building">
+                        <p class="p-existing-audi-testimonials">Lesston Community Building – Community Centre Booking
+                           System America</p>
+                     </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#testimonial-carousel"
+                     data-bs-slide="prev">
+                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                     <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#testimonial-carousel"
+                     data-bs-slide="next">
+                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                     <span class="visually-hidden">Next</span>
+                  </button>
+               </div>
+
+            </section>
+
+            <%- include("./partials/footer"); -%>
+               <%- include("./partials/footerBootstrap"); -%>

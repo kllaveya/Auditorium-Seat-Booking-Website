@@ -1,0 +1,104 @@
+<%- include("./partials/header"); -%>
+
+   <body class="home-body">
+      <%- include("./partials/navbarSeats"); -%>
+
+         <!-- <p class="p-signup home-text">30 min or 15 km</p><br> -->
+         <form method="post" action="/selectSeats">
+            <p class="p-signup home-text" style="margin-top: -7%">Time to choose our seats:</p>
+            <div class="selected-seats" style="margin-top: -200px;">
+               <div>
+                  <ul class="showcase">
+                     <li>
+                        <div class="seat"></div>
+                        <small>Vacant</small>
+                     </li>
+
+                     <li>
+                        <div class="seat selected"></div>
+                        <small>Selected</small>
+                     </li>
+
+                     <li>
+                        <div class="seat occupied"></div>
+                        <small>Booked</small>
+                     </li>
+                  </ul>
+               </div>
+
+               <div class="container selected-seats">
+                  <div class="row-seating">
+                     <div class="seat"></div>
+                     <div class="seat"></div>
+                     <div class="seat"></div>
+                     <div class="seat"></div>
+                     <div class="seat"></div>
+                     <div class="seat"></div>
+                     <div class="seat"></div>
+                     <div class="seat occupied"></div>
+                  </div>
+                  <div class="row-seating">
+                     <div class="seat"></div>
+                     <div class="seat"></div>
+                     <div class="seat"></div>
+                     <div class="seat"></div>
+                     <div class="seat"></div>
+                     <div class="seat"></div>
+                     <div class="seat"></div>
+                     <div class="seat"></div>
+                  </div>
+                  <div class="row-seating">
+                     <div class="seat"></div>
+                     <div class="seat"></div>
+                     <div class="seat"></div>
+                     <div class="seat"></div>
+                     <div class="seat occupied"></div>
+                     <div class="seat occupied"></div>
+                     <div class="seat occupied"></div>
+                     <div class="seat"></div>
+                  </div>
+                  <div class="row-seating">
+                     <div class="seat"></div>
+                     <div class="seat"></div>
+                     <div class="seat"></div>
+                     <div class="seat"></div>
+                     <div class="seat"></div>
+                     <div class="seat occupied"></div>
+                     <div class="seat"></div>
+                     <div class="seat"></div>
+                  </div>
+                  <div class="row-seating">
+                     <div class="seat"></div>
+                     <div class="seat occupied"></div>
+                     <div class="seat occupied"></div>
+                     <div class="seat"></div>
+                     <div class="seat"></div>
+                     <div class="seat occupied"></div>
+                     <div class="seat"></div>
+                     <div class="seat"></div>
+                  </div>
+                  <div class="row-seating">
+                     <div class="seat"></div>
+                     <div class="seat"></div>
+                     <div class="seat"></div>
+                     <div class="seat"></div>
+                     <div class="seat occupied"></div>
+                     <div class="seat occupied"></div>
+                     <div class="seat"></div>
+                     <div class="seat"></div>
+                  </div>
+               </div>
+
+               <p class="text" name="<%= audi.price %>">
+                  You have selected <span id="count" name="count">0</span> seats for a price of ₹<span id="total"
+                     name="price">0</span>
+               </p>
+               <input id="countChild" type="hidden" name="countChild" value="0"></input>
+               <input id="priceChild" type="hidden" name="priceChild" value="0"></input>
+               <button class="btn save pay-button" name="audiName" value="<%= audi._id %>" type="submit">Proceed To
+                  Pay</button>
+            </div>
+         </form>
+
+         <script type="text/javascript" src="/script.js"></script>
+         <%- include("./partials/footerBootstrap"); -%>

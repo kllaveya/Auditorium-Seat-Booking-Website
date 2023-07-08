@@ -1,0 +1,42 @@
+<div class="edit-existing-audi-outer">
+   <% audis.forEach(function(audi) { %>
+      <div class="edit-existing-audi-inner">
+         <div class="row existing-audi-row">
+            <div class="col-lg-6">
+               <p>
+                  Name: <%= audi.name %>
+               </p>
+               <p>
+                  Address: <%= audi.address %>
+               </p>
+               <p>
+                  Number of sections of seats: <%= audi.noOfSections %>
+               </p>
+               <p>
+                  Number of rows per section: <%= audi.noOfRows %>
+               </p>
+               <p>
+                  Number of seats in one row: <%= audi.noOfSeats %>
+               </p>
+            </div>
+
+            <div class="col-lg-6">
+               <p>
+                  Ticket Price: Rs <%= audi.price %>
+               </p>
+               <p>
+                  Ticket counter available: <%= audi.ticket %>
+               </p>
+               <p>
+                  Luggage facility available: <%= audi.luggage %>
+               </p>
+               <p>
+                  Food outlets available: <%= audi.food %>
+               </p>
+            </div>
+         </div>
+
+      </div>
+      <br><br><br>
+      <% }); %>
+</div>

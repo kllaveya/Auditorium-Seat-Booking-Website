@@ -1,0 +1,379 @@
+html, body{
+   height: 100%;
+}
+
+.Sign-Up{
+   color: white;
+   height: 100px;
+   width: 100px;
+   text-align: center;
+}
+
+body {
+   width: 100%;
+   height: 100%
+   
+}
+
+/****************** FEEDBACK FORM PAGE ******************/
+.feedback-body {
+   background-image: url("https://images.unsplash.com/photo-1563225409-127c18758bd5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
+   background-attachment: fixed;
+}
+
+.feedback-form {
+   margin: 5% 5% 5% 5%;
+}
+
+/****************** SIGN UP PAGE ******************/
+.signup-body {
+   background-image: url("https://i.pinimg.com/originals/83/96/8f/83968ffa72741f8e689f402fbf0eca27.jpg");
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+}
+
+.signup {
+   padding: 0.5%;
+}
+
+.form-signup {
+   width: 75%;
+   height: 80%;
+   background-color: white;
+   border-radius: 5px;
+   position: relative;
+   margin-left: 25%;
+}
+
+.text-signup{
+   text-align: center;
+   padding: 15%;
+   font-family: 'Merienda', cursive;
+}
+
+.text-login{
+   padding: 12%;
+}
+
+.pad-grid{
+   padding: 0 5%;
+   width: 99%;
+}
+
+.p-signup {
+   text-align: center;
+   font-size: 3rem;
+   color: white;
+   font-family: 'Merienda', cursive;
+}
+
+.inputarea {
+   background-color: white;
+   padding: 5%;
+   border-radius: 5px;
+   margin: 10% auto;
+}
+
+.formInput {
+   margin: 0;
+}
+
+.navbar-nav  li a:hover {
+   color: #1abc9c !important;
+   text-decoration: none;
+}
+
+.btn {
+   background-color: #1abc9c !important;
+   color: white !important;
+}
+
+/****************** PROFILE PAGE ******************/
+.profile {
+   font-size: 3rem;
+   color: white;
+   font-family: 'Merienda', cursive;
+   padding-left: 15%;
+   padding-top: -20%;
+   display: inline-block;
+}
+
+.profile-labels {
+   font-size: 1.5rem;
+   color: white;
+   font-family: 'Merienda', cursive;
+   padding-left: 15%;
+   padding-top: -20%;
+   display: inline-block;
+}
+
+.profile-text{
+   display: block;
+   text-align: center;
+   padding: 1%;
+}
+
+.profile-input {
+   margin-top: 3%;
+}
+
+.profile-button-left {
+   margin-left: 15%;
+   margin-bottom: 5%;
+}
+
+.profile-button-right {
+   float: right;
+}
+
+/****************** HOME PAGE ******************/
+.home-body {
+   background-image: url("https://i.pinimg.com/originals/83/96/8f/83968ffa72741f8e689f402fbf0eca27.jpg");
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+}
+
+.home-text{
+   text-align: center;
+   padding: 15% 0;
+}
+
+/****************** TILL HERE ******************/
+
+.login {
+   width: 110%;
+   padding: 12%;
+}
+
+.select-audi {
+   width: 25%;
+   margin: -12% auto;
+}
+
+/* for textured background of all pages */
+.back{
+   background-color: #00a17e;
+   background-image: url("https://www.transparenttextures.com/patterns/always-grey.png");
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+}
+
+/****************** for footer ******************/
+#features{
+   background-color: white;
+}
+
+.feature-box{
+   padding: 2%;
+   margin: auto;
+}
+
+.icon{
+   font-size: 70px;
+}
+
+.cl{
+   width: 100%;
+}
+
+.footer-padding{
+   padding: 10rem 0rem;
+}
+
+.container-fluid{
+   padding: auto 15%;
+   display: flex;
+   text-align: center;
+}
+
+.contact-detail-footer{
+   display: inline;
+}
+
+.social-media{
+   text-align: center;
+   padding-bottom: 5%;
+   padding-top: 2%;
+   font-size: 1.3rem;
+}
+
+.social-icon{
+   margin-left: 2%;
+}
+
+.twitter:hover{
+   color: rgb(19, 201, 246);
+}
+
+.facebook:hover{
+   color: rgb(26, 73, 175);
+}
+
+.linkedin:hover{
+   color: rgb(23, 132, 221);
+}
+
+.instagram:hover{
+   color: rgb(238, 0, 255);
+}
+
+.youtube:hover{
+   color: red;
+}
+
+h5:hover{
+   color: #1abc9c;
+}
+
+/****************** Seat booking ******************/
+.seat{
+   background-color: white;
+   height: 12px;
+   width: 15px;
+   margin: 3px;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   box-sizing: border-box;
+}
+
+small{
+   color: white;
+}
+
+.row-seating{
+   display: flex;
+}
+
+.seat.selected{
+   background-color:rgb(19, 201, 246)
+}
+
+.seat.occupied{
+   background-color: green;
+}
+
+.selected-seats{
+   align-items: center;
+   flex-direction: column;
+   justify-content: center;
+   display: flex;
+}
+
+.seat:nth-of-type(2){
+   margin-right: 18px;
+}
+
+.seat:nth-last-of-type(2){
+   margin-left: 18px;
+}
+
+.seat:not(.occupied):hover{
+   cursor: pointer;
+   transform: scale(1.2);
+}
+
+.showcase .seat:not(.occupied):hover{
+   cursor: default;
+   transform: scale(1);
+}
+
+.showcase{
+   padding: 5px 10px;
+   border-radius: 5px;
+   list-style-type: none;
+   display: flex;
+   justify-content: space-between;
+}
+
+.showcase li{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 0 10px;
+}
+
+.showcase li small{
+   margin-left: 10px;
+}
+
+.pay-button{
+   margin: 2% 0;
+}
+
+p.text{
+  margin: 15px 0; 
+  color: white;
+}
+
+p.text span{
+   color: rgb(255, 211, 129);
+}
+
+/****************** Existing Audi ******************/
+.edit-existing-audi-outer{
+   margin: 0 13% 5%;
+}
+
+.edit-existing-audi-inner{
+   border-radius: 7px;
+   height: 16rem;
+   width: 70rem;
+   background-color: white;
+   padding: 4%;
+   text-align: left;
+}
+
+.existing-audi-row{
+   align-items: center;
+   justify-content: center;
+}
+
+.existing-audi-head{
+   padding: 4% 0;
+}
+
+.existing-audi-pricing-plan{
+   margin: 0 10% 4%;
+}
+
+/****************** Testimonial ******************/
+.testimonial-image {
+   width: 10%;
+   border-radius: 100%;
+   margin: 20px;
+}
+
+.testimonial-text{
+   font-size: 1.5rem;
+   line-height: 1.5;
+}
+
+.p-existing-audi-testimonials{
+   font-size: 0.3em;
+}
+
+#testimonials{
+   height: 70%;
+}
+
+.save {
+   float: right;
+}
+
+.remove {
+   float: left;
+}
+
+.profile-save{
+   margin: 2%;
+   float: right;
+}
+
+.price-card{
+   text-align: center;
+}
+
+.price-btn:hover{
+   color: black !important;
+}
